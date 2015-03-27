@@ -14,8 +14,7 @@ endif
 
 syn keyword mslCommand      call dec inc print log send set sleep timeout verbose
 syn keyword mslConditional  expect if
-syn keyword mslRepeat       for
-syn keyword mslStatement    exit goto gosub return 
+syn keyword mslStatement    break exit goto gosub return
 syn match   mslLgcOperator  "[&|||!|<|>|=]"
 syn match   mslNumber       "\<0x\x\+\>"
 syn match   mslNumber       "\<\d\+\>"
@@ -27,7 +26,6 @@ hi def link mslComment      Comment
 hi def link mslConditional  Conditional
 hi def link mslLgcOperator  Operator
 hi def link mslNumber       Number
-hi def link mslRepeat       Repeat
 hi def link mslStatement    Statement
 hi def link mslString       String
 
